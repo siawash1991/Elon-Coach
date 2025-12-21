@@ -6,6 +6,10 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       base: '/Elon-Coach/',
+      build: {
+        outDir: 'docs',
+        emptyOutDir: true,
+      },
       server: {
         port: 3000,
         host: '0.0.0.0',
