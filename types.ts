@@ -19,3 +19,32 @@ export interface ReferenceRow {
   question: string;
   usage: string;
 }
+
+// Post types for the prompt repository
+export interface Post {
+  id: string;
+  slug: string;
+  title: {
+    en: string;
+    fa: string;
+  };
+  description: {
+    en: string;
+    fa: string;
+  };
+  coverImage?: string;
+  coverGradient: string;
+  icon: string;
+  category: {
+    en: string;
+    fa: string;
+  };
+  createdAt: string;
+}
+
+export type Page = 'home' | 'prompt';
+
+export interface RouterState {
+  page: Page;
+  promptSlug?: string;
+}
