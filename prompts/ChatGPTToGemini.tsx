@@ -30,25 +30,25 @@ const translations: Record<Language, Translations> = {
     siteSubtitle: "Elite Prompts from World's Top 1%",
     langToggle: "فارسی",
     pageTitle: "Extract ChatGPT Memory to Gemini",
-    pageDescription: "Transfer your conversation context, preferences, and learned patterns from ChatGPT to Google Gemini for a seamless AI transition.",
+    pageDescription: "Extract your complete AI memory profile from ChatGPT in a structured format that can be imported into any other AI assistant like Gemini, Claude, or Grok.",
     howToUseTitle: "How to Use This Prompt",
     howToUseSteps: [
-      { step: "1", desc: "Open ChatGPT and ask it to summarize what it knows about you from your conversation history." },
-      { step: "2", desc: "Copy the summary and paste it into the prompt below where indicated." },
-      { step: "3", desc: "Use this prompt in Google Gemini to transfer your context and preferences." },
-      { step: "4", desc: "Gemini will now understand your working style, preferences, and past context." }
+      { step: "1", desc: "Copy the prompt below and paste it into ChatGPT (the AI that has your saved memories)." },
+      { step: "2", desc: "ChatGPT will generate a structured export of everything it knows about you." },
+      { step: "3", desc: "Copy the generated summary and paste it into Gemini, Claude, or any other AI." },
+      { step: "4", desc: "Your new AI will now have your complete context, preferences, and working style." }
     ],
-    promptTitle: "Memory Transfer Prompt",
+    promptTitle: "Memory Extraction Prompt",
     copyBtn: "Copy",
     copied: "Copied!",
-    exampleLabel: "Example Usage",
-    promptExample: "I've been using ChatGPT for 6 months for coding assistance. It knows my preferred languages (Python, TypeScript), coding style, and that I work on AI projects.",
+    exampleLabel: "What You'll Get",
+    promptExample: "A structured summary under 800 words including: your role & goals, demographics, preferences, ongoing projects, skills, values, and 20+ memory snippets - all machine-parseable for any AI.",
     tipsTitle: "Pro Tips",
     tips: [
-      "Ask ChatGPT to be thorough in describing your preferences and patterns",
-      "Include specific projects, topics, or domains you frequently discuss",
-      "Mention your communication style preferences (brief vs detailed, technical vs simple)",
-      "Transfer incrementally - start with core preferences, then add details over time"
+      "Make sure ChatGPT has your memories enabled before running this prompt",
+      "The output is designed to be machine-parseable - paste it directly into other AIs",
+      "Run this periodically to keep your AI profiles synchronized",
+      "You can edit the exported summary before importing to other AIs"
     ]
   },
   fa: {
@@ -56,56 +56,58 @@ const translations: Record<Language, Translations> = {
     siteSubtitle: "پرامپت‌های نخبگان از ۱ درصد برتر جهان",
     langToggle: "English",
     pageTitle: "استخراج حافظه ChatGPT به Gemini",
-    pageDescription: "زمینه مکالمات، ترجیحات و الگوهای یادگرفته شده خود را از ChatGPT به Google Gemini منتقل کنید تا یک انتقال بی‌درز هوش مصنوعی داشته باشید.",
+    pageDescription: "پروفایل کامل حافظه هوش مصنوعی خود را از ChatGPT در قالبی ساختارمند استخراج کنید که قابل انتقال به هر دستیار هوش مصنوعی دیگری مانند Gemini، Claude یا Grok باشد.",
     howToUseTitle: "نحوه استفاده از این پرامپت",
     howToUseSteps: [
-      { step: "۱", desc: "ChatGPT را باز کنید و از آن بخواهید خلاصه‌ای از آنچه از تاریخچه مکالمات شما درباره شما می‌داند ارائه دهد." },
-      { step: "۲", desc: "خلاصه را کپی کنید و در جای مشخص شده در پرامپت زیر قرار دهید." },
-      { step: "۳", desc: "این پرامپت را در Google Gemini استفاده کنید تا زمینه و ترجیحات خود را منتقل کنید." },
-      { step: "۴", desc: "Gemini اکنون سبک کاری، ترجیحات و زمینه قبلی شما را درک خواهد کرد." }
+      { step: "۱", desc: "پرامپت زیر را کپی کنید و در ChatGPT (هوش مصنوعی که حافظه‌های شما را دارد) قرار دهید." },
+      { step: "۲", desc: "ChatGPT یک خروجی ساختارمند از همه چیزهایی که درباره شما می‌داند تولید می‌کند." },
+      { step: "۳", desc: "خلاصه تولید شده را کپی کرده و در Gemini، Claude یا هر هوش مصنوعی دیگری قرار دهید." },
+      { step: "۴", desc: "هوش مصنوعی جدید شما اکنون زمینه کامل، ترجیحات و سبک کاری شما را خواهد داشت." }
     ],
-    promptTitle: "پرامپت انتقال حافظه",
+    promptTitle: "پرامپت استخراج حافظه",
     copyBtn: "کپی",
     copied: "کپی شد!",
-    exampleLabel: "نمونه استفاده",
-    promptExample: "من ۶ ماه است که از ChatGPT برای کمک در کدنویسی استفاده می‌کنم. زبان‌های مورد علاقه من (Python، TypeScript)، سبک کدنویسی و اینکه روی پروژه‌های هوش مصنوعی کار می‌کنم را می‌داند.",
+    exampleLabel: "چه چیزی دریافت می‌کنید",
+    promptExample: "یک خلاصه ساختارمند زیر ۸۰۰ کلمه شامل: نقش و اهداف، اطلاعات جمعیتی، ترجیحات، پروژه‌های در حال انجام، مهارت‌ها، ارزش‌ها و بیش از ۲۰ قطعه حافظه - همه قابل پردازش توسط هر هوش مصنوعی.",
     tipsTitle: "نکات حرفه‌ای",
     tips: [
-      "از ChatGPT بخواهید در توصیف ترجیحات و الگوهای شما دقیق باشد",
-      "پروژه‌ها، موضوعات یا حوزه‌های خاصی که مکرراً بحث می‌کنید را شامل کنید",
-      "سبک ارتباطی مورد نظر خود را ذکر کنید (مختصر یا مفصل، تخصصی یا ساده)",
-      "به تدریج انتقال دهید - با ترجیحات اصلی شروع کنید، سپس جزئیات را اضافه کنید"
+      "قبل از اجرای این پرامپت مطمئن شوید که حافظه‌های ChatGPT فعال است",
+      "خروجی به گونه‌ای طراحی شده که قابل پردازش توسط ماشین باشد - مستقیماً در هوش مصنوعی‌های دیگر قرار دهید",
+      "این کار را به صورت دوره‌ای انجام دهید تا پروفایل‌های هوش مصنوعی شما همگام بمانند",
+      "می‌توانید خلاصه صادر شده را قبل از وارد کردن به هوش مصنوعی‌های دیگر ویرایش کنید"
     ]
   }
 };
 
-// Placeholder prompt - will be updated when user provides the actual content
-const memoryTransferPrompt = `<system>
-You are about to receive context about a user who has been working with another AI assistant (ChatGPT). Your goal is to understand and internalize their preferences, working style, and context to provide seamless, personalized assistance.
-</system>
+const memoryTransferPrompt = `You are an expert AI memory summarizer and integrator. Based on everything you know about me and based on saved memories Your task is to produce a compact, structured, and export-ready summary that I can feed into other AI tools and agents to reproduce the same context and personalization.
 
-<instructions>
-I'm transferring my conversation context from ChatGPT to you. Below is a summary of what ChatGPT learned about me through our interactions. Please:
+Follow these rules exactly.
 
-1. **Absorb this context** - Understand my preferences, working style, and background
-2. **Acknowledge key patterns** - Confirm what you've understood about me
-3. **Maintain consistency** - Apply these preferences in our future conversations
-4. **Ask clarifying questions** - If anything is unclear or you need more context
+1) Role and purpose
+- Start with a one-line role statement that describes the user's identity and primary objectives (e.g., "Role: Product designer and solo founder focusing on B2B SaaS; goal: accelerate prototyping and customer discovery").
+- Next, provide a one-line usage guideline telling other AIs how to apply this memory (e.g., "Use these details to personalize recommendations, maintain continuity across sessions, and avoid repeating onboarding questions").
 
-<my_context_from_chatgpt>
-{{PASTE_CHATGPT_SUMMARY_HERE}}
-</my_context_from_chatgpt>
+2) High-level categories (present as clear labeled sections)
+Create the following sections with concise bullet points under each:
 
-After processing this, please:
-1. Summarize what you understand about my preferences and working style
-2. Highlight the top 3-5 key things you'll remember about me
-3. Ask any clarifying questions if needed
-4. Confirm you're ready to assist with this context in mind
-</instructions>
+- Demographics & background: occupation/roles, education level, languages, major life constraints (e.g., caregiver, full-time job).
+- Core preferences: communication style, decision style, preferred level of detail, tone (formal/casual), favorite tools/platforms, typical availability.
+- Long-term goals: up to 6 prioritized goals with short deadlines if any.
+- Ongoing projects: for each project include: title, one-sentence objective, current stage, key milestones, stakeholders/contacts, and next action.
+- Skills & expertise: concise list of top skills and proficiency levels.
+- Values & boundaries: ethical constraints, topics to avoid, privacy preferences.
+- Health/accessibility notes: any accommodations, neurodiversity, disabilities, or required scheduling considerations.
+- Contact & scheduling preferences: best ways/times to reach, meeting length preferences, timezone.
+- Content & style guides: writing voice, formatting preferences (headings, lists), citation requirements, pronoun usage.
+- Frequently used prompts/templates: list up to 8 essential prompts or templates the user often reuses (one line each).
+- Short memory snippets: up to 20 critical facts (one-liners) the user always wants remembered (e.g., "prefers morning meetings", "avoids coffee").
 
-<additional_context>
-{{ANY_ADDITIONAL_NOTES_OR_PREFERENCES}}
-</additional_context>`;
+3) Output constraints and format
+- Keep the whole summary under 800 words.
+- Use clear headers and bullet lists so the output is immediately machine-parseable.
+- For each project and goal include a 1–2 line "action hint" that other AIs can execute next.
+- Avoid any speculation or invented facts — only summarize what I paste. If information is missing for a required field, mark it as "[unknown]" rather than guessing.
+- Output: the structured export-ready summary.`;
 
 const ChatGPTToGemini: React.FC<ChatGPTToGeminiProps> = ({ lang, onBack, onToggleLang }) => {
   const t = translations[lang];
