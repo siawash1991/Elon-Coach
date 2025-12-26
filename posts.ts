@@ -32,6 +32,7 @@ export const posts: Post[] = [
       en: 'Transfer your ChatGPT conversation memory and context to Google Gemini',
       fa: 'انتقال حافظه و زمینه مکالمات ChatGPT به Google Gemini'
     },
+    coverImage: '/Elon-Coach/images/chatgpt-gemini-cover.jpg',
     coverGradient: 'from-emerald-600 via-teal-500 to-cyan-500',
     icon: '🧠',
     category: {
