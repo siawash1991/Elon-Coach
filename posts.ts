@@ -12,6 +12,7 @@ export const posts: Post[] = [
       en: 'First-principles thinking framework extracted from Elon Musk\'s decision-making process',
       fa: 'چارچوب تفکر اصول اولیه استخراج شده از فرآیند تصمیم‌گیری ایلان ماسک'
     },
+    coverImage: '/Elon-Coach/images/elon-cover.jpg',
     coverGradient: 'from-red-600 via-orange-500 to-yellow-500',
     icon: '🚀',
     category: {
