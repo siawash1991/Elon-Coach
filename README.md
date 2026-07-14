@@ -2,19 +2,25 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Thinking Brain / how-to-think-like-elon-musk
 
-This contains everything you need to run your app locally.
+Vite/React bilingual UI that will become a **Council-as-One** chatbot
+(Musk × Huberman × Buffett × Munger), backed by a Karpathy-style LLM wiki.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1En2gy-knLFkJ7InPngw04E0X8ZS3-xVP
+## Plan
+
+Full research + phased roadmap (Persian): [`docs/THINKING_BRAIN_PLAN.md`](docs/THINKING_BRAIN_PLAN.md)
+
+Knowledge base scaffold: [`brain/`](brain/) — open this folder in Obsidian.
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js
 
+1. `npm install`
+2. (Legacy AI Studio) optional `GEMINI_API_KEY` in `.env.local`
+3. `npm run dev`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Chat MVP + OpenRouter wiring is planned in phase 2 of the doc above.
+
+View the original AI Studio app: https://ai.studio/apps/drive/1En2gy-knLFkJ7InPngw04E0X8ZS3-xVP
